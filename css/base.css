@@ -237,7 +237,7 @@
 /* #Forms
 ================================================== */
 	
-	.fake-input,
+/*	.fake-input,
 	input[type="text"],
 	input[type="password"],
 	input[type="email"],
@@ -257,7 +257,7 @@
 		font-weight: 500;
 		border: 1px solid #e0e0e0;
 		opacity: 1;
-	}
+	}*/
 
 	select { padding: 0; }
 
@@ -272,7 +272,7 @@
 		-o-transition: all 0.1s ease-in-out;
 		-ms-transition: all 0.1s ease-in-out;
 		transition: all 0.1s ease-in-out;
-		border: 1px solid #d8d8d8;
+		/*border: 1px solid #d8d8d8;*/
 		opacity: 1;
 	}
 
