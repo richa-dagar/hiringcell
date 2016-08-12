@@ -18,7 +18,7 @@
         <link href="css/common.css" rel="stylesheet" type="text/css" />
         <link href="css/layout.css" rel="stylesheet" type="text/css" />
         <link href="css/base.css" rel="stylesheet" type="text/css" />
-        <!----Media queries css--->
+        <!----Media queries css- -->
         <link href="css/social.css" type="text/css" rel="stylesheet" />
         <link href="css/style.css" type="text/css" rel="stylesheet" />
         <link href="css/theme1024.css" rel="stylesheet" type="text/css" />
@@ -33,55 +33,22 @@
     <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,600,700,900' rel='stylesheet' type='text/css'/>
 
 
-    <script src="js/jquery-ui.js"></script>
     <script src="js/jquery-1.11.3.min.js"></script>
+    <script src="js/jquery-ui.js"></script>
     <script src="js/slider.js"></script>
     <script src="js/plugin.js"></script>
     <script src="js/jquery.bxslider.min.js"></script>
+    <script>
+      $(document).on('ready', function() {
+            $('.header').load("header.html");
+      })
+    </script>
     
 </head>
 <body>
     <div class="main">
-                    <header class="header">
-                    <div class="col-11">
-                    <div class="col-4 mb-11 logo-set">
-                        <div class="logo"><img style="height: 21%;width: 50%;object-fit: contain;" src="image/logo.jpg" /></div>
-
-                    </div>
-
-                    <nav class="mob-menu-icon mb-1">
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                       <span class="icon-bar"></span>
-                   </nav>
-
-                        
-                    <nav class="col-8 menu mob-menu">
-                        
-                         <nav class="mob-menu-icon" style="padding: 26px 26px;width: 100%;box-sizing: border-box;border-bottom:thin solid #ff6d6d; position: fixed;background-color: #fff; ">
-
-
-                    </nav>
-                       <!-- <div class="menu-item-box center "><a href="#" class="menu_link">Home</a>
-
-                            <div class="sub_cata" style="height: 200px;position: absolute;z-index: 99999;background-color: #000;margin-top: 29px;">
-                                Test sub cata
-                            
-                            </div>
-
-                        </div>-->
-                        <div class="menu-item-box center "><a href="#home" class="menu-link">Home</a></div>
-                        <div class="menu-item-box center "><a href="#about" class="menu-link">About</a></div>
-                        <div class="menu-item-box center "><a href="#services" class="menu-link">Services</a></div>
-                        <div class="menu-item-box center "><a href="#clients" class="menu-link">Clients</a></div>                        
-                        <div class="menu-item-box center "><a href="#team" class="menu-link">Team</a></div>
-                        <div class="menu-item-box center "><a href="#contact" class="menu-link">Contact</a></div>
-                                                </nav>
-                        
-                        <div class="menu-item-box center button-3"><a href="#" style="color:white">LogIn/SignUp</a></div>
-                    
-                    </div>
-            </header>
+        <header class="header">
+        </header>    
     <div class="container " >
            <div class="col-5 mb-12 mb-center banner-box">
             <div class="my-account">
@@ -102,7 +69,7 @@
           <div class="input-box">
             <input type="text" required>
             <span class="input-placeholder">Email Address<sup>*</sup></span>
-            <i class="fa fa-envelope" aria-hidden="true"></i>
+            <i class="fa fa-user" aria-hidden="true"></i>
           </div>
           <div class="input-box">
             <input type="password" required>
