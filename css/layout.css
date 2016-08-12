@@ -721,7 +721,7 @@ a.button {
 	position: relative;
 	z-index: 10;
 	color: #fff;
-	background-color: #505050;
+	background-color: #ff6d6d;
 	border: none;
 	-webkit-transition: all 0.2s ease-in-out;
 	-moz-transition: all 0.2s ease-in-out;
@@ -770,7 +770,7 @@ a.button.dark,
 button:hover,
 a.button:hover,.submit-page .button.linkedin-btn:hover,
 input[type="button"]:hover,
-input[type="submit"]:hover { background-color: #282828; }
+input[type="submit"]:hover { background-color: #ff6d6d;border-bottom:2px solid #64A548; }
 
 .upload-btn:hover,
 #titlebar.photo-bg a.button.white:hover,
@@ -1866,7 +1866,7 @@ img.mfp-img {
 .tabs-nav li.active .tab-reviews { color: #fff; }
 
 .tabs-nav li.active a {
-	background-color: #505050;
+	background-color: #ff6d6d;
 	color: #fff;
 }
 
