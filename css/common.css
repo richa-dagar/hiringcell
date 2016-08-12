@@ -44,7 +44,7 @@
   transition: all 0.3s ease-in-out;
 }
 .input-placeholder{
-  z-index: 10000;
+  /*z-index: 10000;*/
 }
 .input-box:after {
 content: '';
@@ -53,7 +53,7 @@ height: 1px;
 width: 0px;
 left:0;
 bottom: 0px;
-background-color:red;
+background-color:#ff6d6d;
 transition: all 0.2s ease-in-out;
 z-index:2;
 }
@@ -64,18 +64,18 @@ height: 1px;
 width: 100%;
 left:0;
 bottom: 0px;
-background-color:red;
+background-color:#ff6d6d;
 z-index:2;
 
 }
 .input-box input:focus + .input-placeholder,
 .input-box input:valid + .input-placeholder {
   font-size: 14px;
-  top: 10px;
+  top: 0px;
   color: #ff6d6d;
 }
 .input-box.active i,
 .input-box input:focus + .input-placeholder + i {
-  transform: rotate(180deg);
+  transform: rotate(360deg);
   color: #444;
 }
