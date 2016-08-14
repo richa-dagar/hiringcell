@@ -17,7 +17,7 @@
   margin-top: -10px;
   transition: all 0.3s ease-in-out;
 }
-.input-box input {
+.input-box input, .input-box textarea {
   padding: 30px 10px 12px 10px;
   position: relative;
   width: 100%;
@@ -76,6 +76,17 @@ z-index:2;
 }
 .input-box.active i,
 .input-box input:focus + .input-placeholder + i {
+  transform: rotate(360deg);
+  color: #444;
+}
+.input-box textarea:focus + .input-placeholder,
+.input-box textarea:valid + .input-placeholder {
+  font-size: 14px;
+  top: 0px;
+  color: #ff6d6d;
+}
+.input-box.active i,
+.input-box textarea:focus + .input-placeholder + i {
   transform: rotate(360deg);
   color: #444;
 }
