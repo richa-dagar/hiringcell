@@ -32,8 +32,30 @@
   <link rel="stylesheet" href="plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css">
   <link href="css/common.css" rel="stylesheet" type="text/css" />
   <link href="css/social.css" type="text/css" rel="stylesheet" />
+  <!-- jQuery 2.2.3 -->
+  <script src="plugins/jQuery/jquery-2.2.3.min.js"></script>
+  <!-- jQuery UI 1.11.4 -->
+  <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
+  <script  type="text/javascript"> //alert("cal4r5f5t6gggl");
 
-
+  $(document).ready(function() {
+      $(".nav-tabs li a").on('click',function(){
+          $(this).tab('show');
+      });
+      var hash = window.location.href.split('#')[1];
+      if($("."+hash).length == 0 || $("#"+hash).length == 0) {
+        hash = "opened";
+      }
+      $("."+hash).addClass("active");
+      $("#"+hash).addClass("active").addClass('in');
+  });
+  </script>
+  <style type="text/css">
+    .search-row th input {
+      outline:none;
+      border:0;
+    }
+  </style>
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
   <!--[if lt IE 9]>
@@ -128,10 +150,10 @@
               <!-- Menu Footer-->
               <li class="user-footer">
                 <div class="pull-left">
-                  <a href="#" class="btn btn-default btn-flat">Profile</a>
+                  <a href="profile.html" class="btn btn-default btn-flat">Profile</a>
                 </div>
                 <div class="pull-right">
-                  <a href="#" class="btn btn-default btn-flat">Sign out</a>
+                  <a href="login.html" class="btn btn-default btn-flat">Logout</a>
                 </div>
               </li>
             </ul>
@@ -172,7 +194,7 @@
       <!-- sidebar menu: : style can be found in sidebar.less -->
      <ul class="sidebar-menu">
         <li class="header">MAIN NAVIGATION</li>
-        <li class="active">
+        <li>
           <a href="dashboard.html">
             <i class="fa fa-dashboard"></i> <span>Dashboard</span>
             <span class="pull-right-container">
@@ -188,7 +210,7 @@
             </span>
           </a>          
         </li>
-        <li>
+        <li class="active">
           <a href="client-job-list.html">
             <i class="fa fa-eye"></i> <span>View Jobs</span>
             <span class="pull-right-container">
@@ -248,58 +270,118 @@
         <h1>
            Jobs Posted
         </h1><hr/>
-        <table class="table table-striped">
-            <thead>
-                <tr>
-                    <th>Job Title</th>
-                    <th>Posted On</th>
-                    <th>Minimum Experience</th>
-                    <th>Skills</th>
-                    <th>Status</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Web Developer</td>
-                    <td>12/08/2016</td>
-                    <td>4 Years</td>
-                    <td>PHP, MySql, AngularJS</th>
-                    <td style="background-color:green;color:white;">Closed</td>
-                </tr>
-                 <tr>
-                    <td>Php Developer</td>
-                    <td>2/07/2016</td>
-                    <td>3 Years</td>
-                    <td> MySql, AngularJS</th>
-                     <td style="background-color:red;color:white;">Open</td>
-                </tr>  
-                <tr>
-                    <td>Android Developer</td>
-                    <td>12/07/2016</td>
-                    <td>6 Years</td>
-                    <td>Android</th>
-                    <td style="background-color:green;color:white;">Closed</td>
-                </tr>  <tr>
-                    <td>Web Developer</td>
-                    <td>12/08/2016</td>
-                    <td>4 Years</td>
-                    <td>PHP, MySql, AngularJS</th>
-                    <td style="background-color:red;color:white;">Open</td>
-                </tr>  <tr>
-                    <td>asp.net Developer</td>
-                    <td>12/08/2016</td>
-                    <td>4 Years</td>
-                    <td>postgres,asp.net</th>
-                     <td style="background-color:green;color:white;">Closed</td>
-                </tr>  <tr>
-                    <td>JS Developer</td>
-                    <td>12/08/2016</td>
-                    <td>2 Years</td>
-                    <td> JS, AngularJS</th>
-                     <td style="background-color:red;color:white;">Open</td>
-                </tr>
-            </tbody>
-        </table>
+        <ul class="nav nav-tabs">
+          <li class="opened" ><a href="#opened">Active Jobs</a></li>
+          <li class="closed"><a href="#closed">Closed Jobs</a></li>
+        </ul>
+
+        <div class="tab-content">
+          <hr/>
+          <div id="opened" class="tab-pane fade">
+            <table class="table table-striped">
+              <thead>
+                  <tr>
+                      <th>Job Title</th>
+                      <th>Posted On</th>
+                      <th>Minimum Experience</th>
+                      <th>Skills</th>
+                  </tr>
+                  <tr class="search-row">
+                      <th><input type="text" /></th>
+                      <th><input type="text" /></th>
+                      <th><input type="text" /></th>
+                      <th><input type="text" /></th>
+                  </tr>
+              </thead>
+              <tbody>
+                  <tr>
+                      <td>Web Developer</td>
+                      <td>12/08/2016</td>
+                      <td>4 Years</td>
+                      <td>PHP, MySql, AngularJS</th>
+                  </tr>
+                   <tr>
+                      <td>Php Developer</td>
+                      <td>2/07/2016</td>
+                      <td>3 Years</td>
+                      <td> MySql, AngularJS</th>
+                  </tr>  
+                  <tr>
+                      <td>Android Developer</td>
+                      <td>12/07/2016</td>
+                      <td>6 Years</td>
+                      <td>Android</th>
+                  </tr>  <tr>
+                      <td>Web Developer</td>
+                      <td>12/08/2016</td>
+                      <td>4 Years</td>
+                      <td>PHP, MySql, AngularJS</th>
+                  </tr>  <tr>
+                      <td>asp.net Developer</td>
+                      <td>12/08/2016</td>
+                      <td>4 Years</td>
+                      <td>postgres,asp.net</th>
+                  </tr>  <tr>
+                      <td>JS Developer</td>
+                      <td>12/08/2016</td>
+                      <td>2 Years</td>
+                      <td> JS, AngularJS</th>
+                  </tr>
+              </tbody>
+            </table>
+          </div>
+          <div id="closed" class="tab-pane fade">
+            <table class="table table-striped">
+              <thead>
+                  <tr>
+                      <th>Job Title</th>
+                      <th>Posted On</th>
+                      <th>Minimum Experience</th>
+                      <th>Skills</th>
+                      <th>Close On</th>
+                  </tr>
+                  <tr class="search-row">
+                      <th><input type="text" /></th>
+                      <th><input type="text" /></th>
+                      <th><input type="text" /></th>
+                      <th><input type="text" /></th>
+                      <th><input type="text" /></th>
+                  </tr>
+              </thead>
+              <tbody>
+                  <tr>
+                      <td>Devops</td>
+                      <td>12/08/2016</td>
+                      <td>4 Years</td>
+                      <td>AWS, Azzure</th>
+                      <td>22/08/2016</td>
+                  </tr>
+                   <tr>
+                      <td>Python Developer</td>
+                      <td>2/07/2016</td>
+                      <td>3 Years</td>
+                      <td> Python, MySql</th>
+                       <td>15/07/2016</td>
+                  </tr>  
+                  <tr>
+                      <td>Quality Analyst</td>
+                      <td>12/07/2016</td>
+                      <td>6 Years</td>
+                      <td>Manual/Automatic Tesing</th>
+                      <td>05/08/2016</td>
+                  </tr>  <tr>
+                      <td>Web Developer</td>
+                      <td>12/08/2016</td>
+                      <td>4 Years</td>
+                      <td>PHP, MySql, AngularJS</th>
+                      <td>19/08/2016</td>
+                  </tr>   
+              </tbody>
+            </table>
+          </div>
+          
+        </div>
+        
     </section>
 
 
@@ -534,10 +616,7 @@
 </div>
 <!-- ./wrapper -->
 
-<!-- jQuery 2.2.3 -->
-<script src="plugins/jQuery/jquery-2.2.3.min.js"></script>
-<!-- jQuery UI 1.11.4 -->
-<script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
+
 <!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
 <script>
   $.widget.bridge('uibutton', $.ui.button);
@@ -571,5 +650,6 @@
 <script src="dist/js/pages/dashboard.js"></script>
 <!-- AdminLTE for demo purposes -->
 <script src="dist/js/demo.js"></script>
+
 </body>
 </html>

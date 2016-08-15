@@ -32,7 +32,12 @@
   <link rel="stylesheet" href="plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css">
   <link href="css/common.css" rel="stylesheet" type="text/css" />
   <link href="css/social.css" type="text/css" rel="stylesheet" />
-
+  <style type="text/css">
+    .search-row th input {
+      outline:none;
+      border:0;
+    }
+  </style>
 
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -128,10 +133,10 @@
               <!-- Menu Footer-->
               <li class="user-footer">
                 <div class="pull-left">
-                  <a href="#" class="btn btn-default btn-flat">Profile</a>
+                  <a href="profile.html" class="btn btn-default btn-flat">Profile</a>
                 </div>
                 <div class="pull-right">
-                  <a href="#" class="btn btn-default btn-flat">Sign out</a>
+                  <a href="login.html" class="btn btn-default btn-flat">Logout</a>
                 </div>
               </li>
             </ul>
@@ -172,7 +177,7 @@
       <!-- sidebar menu: : style can be found in sidebar.less -->
      <ul class="sidebar-menu">
         <li class="header">MAIN NAVIGATION</li>
-        <li class="active">
+        <li>
           <a href="dashboard.html">
             <i class="fa fa-dashboard"></i> <span>Dashboard</span>
             <span class="pull-right-container">
@@ -204,7 +209,7 @@
             </span>
           </a>          
         </li>
-         <li>
+         <li class="active">
           <a href="clickandhire.html">
             <i class="fa fa-arrow-circle-o-right"></i> <span>Click & Hire</span>
             <span class="pull-right-container">
@@ -258,6 +263,14 @@
                     <th>Current Company</th>
                     <th>Action</th>
                 </tr>
+                <tr class="search-row">
+                      <th><input type="text" /></th>
+                      <th><input type="text" /></th>
+                      <th><input type="text" /></th>
+                      <th><input type="text" /></th>
+                      <th><input type="text" /></th>
+                      <th>&nbsp;</th>
+                  </tr>
             </thead>
             <tbody>
                 <tr>
