@@ -170,7 +170,7 @@
       </form>
       <!-- /.search form -->
       <!-- sidebar menu: : style can be found in sidebar.less -->
-      <ul class="sidebar-menu">
+     <ul class="sidebar-menu">
         <li class="header">MAIN NAVIGATION</li>
         <li class="active">
           <a href="dashboard.html">
@@ -220,7 +220,7 @@
             </span>
           </a>          
         </li>
-      </ul>
+      </ul>a
     </section>
     <!-- /.sidebar -->
   </aside>
@@ -245,50 +245,71 @@
 
 
     <section class="content-header">
-      <h1>
-        Profile
-        <!-- <small>Control panel</small> -->
-      </h1>
-      <ol class="breadcrumb">
-        <li><a href="index.html"><i class="fa fa-dashboard"></i> Home</a></li>
-        <li class="active">Profile</li>
-      </ol>
-    </section>
-
-    <!-- Main content -->
-    <section class="content">
-      <!-- /.row (main row) -->
-      <form role="form">
-        <div class="input-box">
-          <input type="text" required id="user_email" value="client@hiringcell.com">
-          <span class="input-placeholder">Email<sup>*</sup></span>
-          <!-- <i class="fa fa-user" aria-hidden="true"></i> -->
-        </div>
-        <div class="input-box">
-          <input type="text" required id="user_email" value="8989789067">
-          <span class="input-placeholder">Contact Number<sup>*</sup></span>
-          <!-- <i class="fa fa-user" aria-hidden="true"></i> -->
-        </div>
-        <div class="input-box">
-          <input type="text" required id="user_email" value="Demo Client">
-          <span class="input-placeholder">Profile Name<sup>*</sup></span>
-          <!-- <i class="fa fa-user" aria-hidden="true"></i> -->
-        </div>
-        <div class="input-box">
-          <textarea required cols="150" style="border:none;outline:none;background:transparent;border-bottom:1px solid #aaa;">H.NO :67,Street 2,Pune</textarea>
-          <span class="input-placeholder">Address<sup>*</sup></span>
-          <!-- <i class="fa fa-user" aria-hidden="true"></i> -->
-        </div>
-        
-        <!-- <div class="form-group">
-          <label for="email">Email address:</label>
-          <input type="email" class="form-control" id="email">
-        </div> -->
-
-        <hr/>
-        
-        <button type="submit" class="btn btn-primary">Update</button>
-      </form>
+        <h1>
+            Candidates List
+        </h1><hr/>
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Gender</th>
+                    <th>Experience</th>
+                    <th>Skills</th>
+                    <th>Current Company</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Aju</td>
+                    <td>Male</td>
+                    <td>4 Years</td>
+                    <td>PHP, MySql, AngularJS</th>
+                    <td>Google India</td>
+                    <td><a href="candidate-profile.html" class="btn btn-primary">Click & Hire</a></td>
+                </tr>
+                <tr>
+                    <td>Richa</td>
+                    <td>Female</td>
+                    <td>4.2 Years</td>
+                    <td>PHP, MySql, AngularJS</th>
+                    <td>Cuelogic Technologies Pvt Ltd.</td>
+                    <td><a href="candidate-profile.html" class="btn btn-primary">Click & Hire</a></td>
+                </tr>
+                <tr>
+                    <td>Chhavi</td>
+                    <td>Female</td>
+                    <td>6 Years</td>
+                    <td>PHP, MySql, AngularJS</th>
+                    <td>TechM</td>
+                    <td><a href="candidate-profile.html" class="btn btn-primary">Click & Hire</a></td>
+                </tr>
+                <tr>
+                    <td>Mukul</td>
+                    <td>Male</td>
+                    <td>3 Years</td>
+                    <td>PHP, MySql, AngularJS</th>
+                    <td>Mango People India Pvt Ltd</td>
+                    <td><span class="btn btn-default">Scheduled</span></td>
+                </tr>
+                <tr>
+                    <td>Jaswant Singh</td>
+                    <td>Male</td>
+                    <td>5 Years</td>
+                    <td>HTML, CSS, CSS3</th>
+                    <td>Makaan.com</td>
+                    <td><span class="btn btn-default">Pending</span></td>
+                </tr>
+                <tr>
+                    <td>Rahul Palake</td>
+                    <td>Male</td>
+                    <td>9 Years</td>
+                    <td>PHP, MySql, AngularJS</th>
+                    <td>Cuelogic Technologies Pvt Ltd</td>
+                    <td><a href="candidate-profile.html" class="btn btn-primary">Click & Hire</a></td>
+                </tr>
+            </tbody>
+        </table>
     </section>
 
 
