@@ -32,8 +32,24 @@
   <link rel="stylesheet" href="plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css">
   <link href="css/common.css" rel="stylesheet" type="text/css" />
   <link href="css/social.css" type="text/css" rel="stylesheet" />
+  <style>
+    .red-color {
+      background-color : #d55!important;
+      color:#000!important;
+    }
+  </style>
+  <!-- jQuery 2.2.3 -->
+<script src="plugins/jQuery/jquery-2.2.3.min.js"></script>
+<!-- jQuery UI 1.11.4 -->
+<script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
+  <script  type="text/javascript"> //alert("cal4r5f5t6gggl");
 
-
+  // $(document).ready(function() { console.log($('.sidebar-menu').find('li:eq(5) > a').length)
+  //   setInterval(function() { 
+  //     $('.sidebar-menu').find('li:eq(5) > a').toggleClass('red-color')
+  //   }, 1200);
+  // })
+</script>
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
   <!--[if lt IE 9]>
@@ -182,7 +198,7 @@
         </li>
         <li>
           <a href="addjob.html">
-            <i class="fa fa-plus-square"></i> <span>Add New Job</span>
+            <i class="fa fa-plus-square"></i> <span>Add New Requirement </span>
             <span class="pull-right-container">
               <!-- <i class="fa fa-angle-left pull-right"></i> -->
             </span>
@@ -190,7 +206,7 @@
         </li>
         <li>
           <a href="client-job-list.html">
-            <i class="fa fa-eye"></i> <span>View Jobs</span>
+            <i class="fa fa-eye"></i> <span>Requirements Posted</span>
             <span class="pull-right-container">
               <!-- <i class="fa fa-angle-left pull-right"></i> -->
             </span>
@@ -207,6 +223,22 @@
          <li>
           <a href="clickandhire.html">
             <i class="fa fa-arrow-circle-o-right"></i> <span>Click & Hire</span>
+            <span class="pull-right-container">
+              <!-- <i class="fa fa-angle-left pull-right"></i> -->
+            </span>
+          </a>          
+        </li>
+        <li>
+          <a href="shortlisted-candidates.html">
+            <i class="fa fa-check"></i> <span>Shortlisted Candidates</span>
+            <span class="pull-right-container">
+              <!-- <i class="fa fa-angle-left pull-right"></i> -->
+            </span>
+          </a>          
+        </li>
+        <li>
+          <a href="">
+            <i class="fa fa-usd"></i> <span>Balance</span>
             <span class="pull-right-container">
               <!-- <i class="fa fa-angle-left pull-right"></i> -->
             </span>
@@ -259,8 +291,8 @@
     <section class="content">
       <!-- Small boxes (Stat box) -->
       <div class="row">
-        <div class="col-lg-3 col-xs-6">
-          <!-- small box -->
+        <!-- <div class="col-lg-3 col-xs-6">
+          
           <div class="small-box bg-aqua">
             <div class="inner">
               <h3>15</h3>
@@ -272,41 +304,43 @@
             </div>
             <a href="client-job-list.html" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
           </div>
-        </div>
+        </div> -->
         <!-- ./col -->
         
         <div class="col-lg-3 col-xs-6">
           <!-- small box -->
-          <div class="small-box bg-yellow">
+          <div onclick="window.location = 'addjob.html'" style="cursor:pointer" class="small-box bg-yellow">
             <div class="inner">
-              <h3>44</h3>
+              <h3>Click</h3>
 
-              <p>New User Registrations</p>
+              <p>&nbsp;</p>
             </div>
             <div class="icon">
               <i class="ion ion-person-add"></i>
             </div>
-            <a href="new-candidates.html" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
+            <a href="addjob.html" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
           </div>
+        </div>
+        <div class="col-lg-2 col-xs-6">
+          <img src="image/arrow.png" width=100 style="margin:20px  40px" />
         </div>
         <!-- ./col -->
         <div class="col-lg-3 col-xs-6">
           <!-- small box -->
-          <div class="small-box bg-green">
+          <div onclick="window.location = 'clickandhire.html'" style="cursor:pointer"  class="small-box bg-green">
             <div class="inner">
-              <h3>12</h3>
+              <h3>Hire</h3>
 
-              <p>Shorlisted Candidates</p>
+              <p>&nbsp;</p>
             </div>
             <div class="icon">
               <i class="ion ion-person"></i>
             </div>
-            <a href="shortlisted-candidates.html" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
+            <a href="clickandhire.html" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
           </div>
         </div>
         <!-- ./col -->
-        <div class="col-lg-3 col-xs-6">
-          <!-- small box -->
+        <!-- <div class="col-lg-3 col-xs-6">
           <div class="small-box bg-red">
             <div class="inner">
               <h3>6500<sup style="font-size: 20px"> Rs</sup></h3>
@@ -318,7 +352,7 @@
             </div>
             <a href="#" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
           </div>
-        </div>
+        </div> -->
         <!-- ./col -->
       </div>
       <!-- /.row -->
@@ -892,10 +926,7 @@
 </div>
 <!-- ./wrapper -->
 
-<!-- jQuery 2.2.3 -->
-<script src="plugins/jQuery/jquery-2.2.3.min.js"></script>
-<!-- jQuery UI 1.11.4 -->
-<script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
+
 <!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
 <script>
   $.widget.bridge('uibutton', $.ui.button);
@@ -929,5 +960,6 @@
 <script src="dist/js/pages/dashboard.js"></script>
 <!-- AdminLTE for demo purposes -->
 <script src="dist/js/demo.js"></script>
+  
 </body>
 </html>
