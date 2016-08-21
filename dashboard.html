@@ -33,9 +33,19 @@
   <link href="css/common.css" rel="stylesheet" type="text/css" />
   <link href="css/social.css" type="text/css" rel="stylesheet" />
   <style>
+    .arrow:hover {
+  transform: rotate(360deg);
+  /*border: 2px solid #333;*/
+}
+.arrow {
+transition: all 0.4s ease-in-out;
+}
     .red-color {
       background-color : #d55!important;
       color:#000!important;
+    }
+    .infuser2o p {
+      color:#ff6d6d;
     }
   </style>
   <!-- jQuery 2.2.3 -->
@@ -50,6 +60,7 @@
   //   }, 1200);
   // })
 </script>
+
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
   <!--[if lt IE 9]>
@@ -238,7 +249,7 @@
         </li>
         <li>
           <a href="">
-            <i class="fa fa-usd"></i> <span>Balance</span>
+            <i class="fa fa-usd"></i> <span>Invoice</span>
             <span class="pull-right-container">
               <!-- <i class="fa fa-angle-left pull-right"></i> -->
             </span>
@@ -321,8 +332,8 @@
             <a href="addjob.html" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
           </div>
         </div>
-        <div class="col-lg-2 col-xs-6">
-          <img src="image/arrow.png" width=100 style="margin:20px  40px" />
+        <div class="col-lg-2 col-xs-6 ">
+          <img src="image/arrow.png" width=100 class="arrow" style="margin:20px  40px" />
         </div>
         <!-- ./col -->
         <div class="col-lg-3 col-xs-6">
@@ -357,6 +368,7 @@
       </div>
       <!-- /.row -->
       <!-- Main row -->
+      <hr/>
       <div class="row">
         <!-- Left col -->
         <section class="col-lg-7 connectedSortable">
@@ -462,7 +474,74 @@
             </div>
           </div>
           <!-- /.box (chat box) -->
+          <div class="box box-primary" >
+            <div class="box-header">
+              <i class="ion ion-clipboard"></i>
 
+              <h3 class="box-title">Last Login Details</h3>
+
+              
+            </div>
+            <!-- /.box-header -->
+            <div class="box-body">
+              <ul class="todo-list">
+                <li>
+                  <!-- drag handle -->
+                      <span class="handlee">
+                        <i class="fa fa-ellipsis-v"></i>
+                        <i class="fa fa-ellipsis-v"></i>
+                      </span>
+                  <span class="text">13th August, 2016</span>
+                  <small class="label label-danger"><i class="fa fa-clock-o"></i> 25 mins</small>
+                  
+                </li>
+                <li>
+                  <!-- drag handle -->
+                      <span class="handlee">
+                        <i class="fa fa-ellipsis-v"></i>
+                        <i class="fa fa-ellipsis-v"></i>
+                      </span>
+                  <span class="text">10th August, 2016</span>
+                  <small class="label label-danger"><i class="fa fa-clock-o"></i> 47 mins</small>
+                  
+                </li>
+                <li>
+                  <!-- drag handle -->
+                      <span class="handlee">
+                        <i class="fa fa-ellipsis-v"></i>
+                        <i class="fa fa-ellipsis-v"></i>
+                      </span>
+                  <span class="text">4th August, 2016</span>
+                  <small class="label label-danger"><i class="fa fa-clock-o"></i> 8 mins</small>
+                  
+                </li>
+                <li>
+                  <!-- drag handle -->
+                      <span class="handlee">
+                        <i class="fa fa-ellipsis-v"></i>
+                        <i class="fa fa-ellipsis-v"></i>
+                      </span>
+                  <span class="text">3rd August, 2016</span>
+                  <small class="label label-danger"><i class="fa fa-clock-o"></i> 31 mins</small>
+                  
+                </li>
+                <li>
+                  <!-- drag handle -->
+                      <span class="handlee">
+                        <i class="fa fa-ellipsis-v"></i>
+                        <i class="fa fa-ellipsis-v"></i>
+                      </span>
+                  <span class="text">28th July August, 2016</span>
+                  <small class="label label-danger"><i class="fa fa-clock-o"></i> 22 mins</small>
+                  
+                </li>
+              </ul>
+            </div>
+            <!-- /.box-body -->
+            <!-- <div class="box-footer clearfix no-border">
+              <button type="button" class="btn btn-default pull-right"><i class="fa fa-plus"></i> Add item</button>
+            </div> -->
+          </div>
           <!-- TO DO List -->
           <div class="box box-primary" style="display:none;">
             <div class="box-header">

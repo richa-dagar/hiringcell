@@ -39,6 +39,14 @@
     <script src="js/slider.js"></script>
     <script src="js/plugin.js"></script>
     <script src="js/jquery.bxslider.min.js"></script>
+    <style type="text/css">
+    .dropdown select {
+        width:400px; padding:5px
+    }
+    .dropdown select option {
+         padding:15px
+    }
+    </style>
     <script>
       $(document).on('ready', function() {
             $('.header').load("header.html");
@@ -108,16 +116,54 @@
                         <form method="post" class="register">
                             <div class="input-box">
                                 <input type="text" required>
+                                <span class="input-placeholder">Company Name<sup>*</sup></span>
+                                <!-- <i class="fa fa-user" aria-hidden="true"></i> -->
+                            </div>
+                            <div class="input-box">
+                                <input type="text" required>
+                                <span class="input-placeholder">Founder & Co-Founder<sup>*</sup></span>
+                                <!-- <i class="fa fa-user" aria-hidden="true"></i> -->
+                            </div>
+                            <div class="input-box">
+                                <textarea required></textarea>
+                                <span class="input-placeholder">Full Address<sup>*</sup></span>
+                                <!-- <i class="fa fa-user" aria-hidden="true"></i> -->
+                            </div>
+                            <div class="input-box">
+                                <input type="text" required>
+                                <span class="input-placeholder">Company Established<sup>*</sup></span>
+                                <!-- <i class="fa fa-user" aria-hidden="true"></i> -->
+                            </div>
+                            <div class="input-box">
+                                <input type="text" required>
+                                <span class="input-placeholder">No. of Employees<sup>*</sup></span>
+                                <!-- <i class="fa fa-user" aria-hidden="true"></i> -->
+                            </div>
+                            <div class="dropdown form-group">
+                                <label>Company Vertical</label>
+                                <select>
+                                    <option>Select an option</option>
+                                    <option>Service</option>
+                                    <option>Product</option>
+                                </select>
+                          </div>
+                            <div class="input-box">
+                                <textarea required></textarea>
+                                <span class="input-placeholder">Company Description<sup>*</sup></span>
+                                <!-- <i class="fa fa-user" aria-hidden="true"></i> -->
+                            </div>
+                            <div class="input-box">
+                                <input type="text" required> 
                                 <span class="input-placeholder">Email<sup>*</sup></span>
                                 <i class="fa fa-user" aria-hidden="true"></i>
                             </div>
                             <div class="input-box">
-                                <input type="text" required> 
+                                <input type="password" required> 
                                 <span class="input-placeholder">Password<sup>*</sup></span>
                                 <i class="fa fa-key" aria-hidden="true"></i>
                             </div>
                             <div class="input-box">
-                                <input type="text" required>
+                                <input type="password" required>
                                 <span class="input-placeholder">Repeat Password<sup>*</sup></span>
                                 <i class="fa fa-key" aria-hidden="true"></i>
                             </div>
